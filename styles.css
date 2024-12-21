@@ -587,6 +587,12 @@ h6 {
     background: url('images/JoinUs/join-us-bg.jpg') center/cover no-repeat var(--color-dark-alternate);
 }
 
+.join-us-video {
+    width: 100%;
+    height: auto;
+    max-width: 965px;
+}
+
 .join-us-video-play-button {
     position: absolute;
     top: 50%;
@@ -667,6 +673,7 @@ join-us-video-play-button:hover::after {
     font-size: 20px;
     line-height: 1.65;
     text-transform: uppercase;
+    text-align: center;
     color: var(--color-light);
 }
 
@@ -722,7 +729,13 @@ join-us-video-play-button:hover::after {
         padding-block: 50px;
     }
 
+    .join-us-body {
+        padding-bottom: 80px;
+    }
 
+    .join-us-title:not(:last-child) {
+        margin-bottom: 80px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -785,4 +798,23 @@ join-us-video-play-button:hover::after {
     .training-types-image {
         max-width: 120px;
     }
+
+    .join-us-video-play-button {
+        width: 140px;
+    }
+
+    .join-us-title:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .join-us-form-subtitle {
+        font-size: 16px;
+    }
+
+    .join-us-form-body {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
 }
