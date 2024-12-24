@@ -295,6 +295,12 @@ a:hover {
     color: var(--color-light-grey);
 }
 
+.section-description {
+    font-size: 20px;
+    color: var(--color-light);
+    text-transform: uppercase;
+}
+
 .container {
     max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
     margin-inline: auto;
@@ -594,7 +600,7 @@ h6 {
     justify-content: center;
     align-items: center;
     padding: 150px 30px;
-    background: url('images/JoinUs/join-us-bg.jpg') center/cover no-repeat var(--color-dark-alternate);
+    background: url('./images/JoinUs/join-us-bg.jpg.jpg') center/cover no-repeat var(--color-dark-alternate);
 }
 
 .join-us-video {
@@ -679,7 +685,7 @@ join-us-video-play-button:hover::after {
     top: -0.35em
 }
 
-.join-us-form-subtitle {
+.section-description {
     font-size: 20px;
     line-height: 1.65;
     text-transform: uppercase;
@@ -726,6 +732,32 @@ join-us-video-play-button:hover::after {
 .location-description:not(:last-child) {
     margin-bottom: 37px;
     max-width: 490px;
+}
+
+.family {
+    background-color: var(--color-dark-alternate);
+}
+
+.family-body {
+    display: flex;
+    justify-content: center;
+    column-gap: 26px;
+}
+
+.family-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 132px;
+    padding-bottom: 62px;
+    text-align: center;
+    row-gap: 7px;
+}
+
+.family-descriptiom {
+    font-size: 20px;
+    color: var(--color-light);
+    text-transform: uppercase;
 }
 
 /* Медиа-запросы */
@@ -777,6 +809,10 @@ join-us-video-play-button:hover::after {
     .location {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .family-image {
+        height: 360px;
     }
 }
 
@@ -849,7 +885,7 @@ join-us-video-play-button:hover::after {
         margin-bottom: 40px;
     }
 
-    .join-us-form-subtitle {
+    .section-description {
         font-size: 16px;
     }
 
@@ -865,5 +901,18 @@ join-us-video-play-button:hover::after {
 
     .location-description:not(:last-child) {
         padding-block: 20px;
+    }
+
+    .family-image {
+        height: 180px;
+    }
+
+    .family-header {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .family-body {
+        column-gap: 12px;
     }
 }
